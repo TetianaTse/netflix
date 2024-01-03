@@ -1,0 +1,53 @@
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    button {
+        opacity: 0.8;
+        transition: border-color .2s ease, opacity .2s ease;
+        border: none;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 0.5rem;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fff;
+        cursor: pointer;
+        background-color: transparent;
+        margin: 0 1rem;
+        z-index: 100;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        a.active {
+            color: #c62e21;
+        }
+
+        &.activeTab {
+            opacity: 1;
+            a {
+                color: #c62e21;
+                opacity: 1;
+            }
+
+        }
+        &:hover {
+            border-bottom: 2px solid #8e1e14;
+            opacity: 1;
+            a {
+                color: #c62e21;
+            }
+        }
+    }
+    a.active {
+        color: #c62e21;
+        opacity: 1;
+      }   
+}

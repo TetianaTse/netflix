@@ -1,0 +1,45 @@
+@import "../../../variables";
+
+.sidebar {
+    button {
+        background-color: transparent;
+        border: none;
+        color: $gray;
+        font-size: 28px;
+
+        i {
+            font-size: 40px;
+            margin-left: 1rem;
+        }
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        display: none;
+        animation: opacity 0.4s;
+
+        &.show {
+            display: block;
+        }
+        li{
+            margin-bottom: 0.5rem;
+            text-align: right;
+
+            a {
+                padding: 0.5rem;
+                color: $gray;
+                border-left: 2px solid transparent;
+                font-size: 18px;
+                text-decoration: none;
+                display: block;
+                text-align: center;
+                &:hover,
+                &:active {
+                    border-color: $red;
+                    background-color: #2a2a2c;
+                }
+            }
+
+        }
+    }
+}
